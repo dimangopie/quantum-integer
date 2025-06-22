@@ -6,7 +6,7 @@ public class QuantumInteger extends ProperFraction implements Quantizable<Intege
     private int index = 0;
     protected int[] imaginaryIntegerList;
     private static Long seed;
-    private boolean entanglement;
+//    private boolean entanglement;
 
     @Override
     public Integer Observe() {
@@ -56,7 +56,7 @@ public class QuantumInteger extends ProperFraction implements Quantizable<Intege
         if (seed == null) {
             this.setImaginaryIntegerArray();
         }
-        this.entanglement = false;
+//        this.entanglement = false;
     }
 
     private void setImaginaryIntegerArray() {
