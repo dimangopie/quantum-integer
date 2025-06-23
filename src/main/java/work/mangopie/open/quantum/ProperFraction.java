@@ -159,8 +159,7 @@ public class ProperFraction extends Number implements Comparable<ProperFraction>
     public static ProperFraction frac(int numerator, int denominator) {
         return new ProperFraction(ProperFraction.toFrac(numerator, denominator));
     }
-
-    public static ProperFraction continuedFractionExpansion(double value, int nthOrder) throws ArithmeticException{
+    public static ProperFraction continuedFractionExpansion (double value, int nthOrder) throws ArithmeticException{
         int integerPart = (int) value;
         double decimalPart = value % 1.0;
         if (nthOrder <= 0) {
